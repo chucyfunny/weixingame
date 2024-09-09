@@ -1,6 +1,6 @@
 [rewrite_local]
 # 拦截并修改 prod-zhuadae.lanfeitech.com/api/archive/upload 请求
-^https:\/\/prod-zhuadae\.lanfeitech\.com\/api\/archive\/upload url script-request-body modify-tools.js
+^https:\/\/prod-zhuadae\.lanfeitech\.com\/api\/archive\/upload url script-request-body https://raw.githubusercontent.com/chucyfunny/weixingame/main/modify-tools.js
 
 [mitm]
 hostname = prod-zhuadae.lanfeitech.com
